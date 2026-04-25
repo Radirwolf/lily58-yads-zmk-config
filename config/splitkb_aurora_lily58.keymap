@@ -31,6 +31,20 @@
             bindings = <&kp LC(C) &kp LC(T) &kp C &kp I &kp D &kp SPACE &kp LC(V) &kp ENTER>;
             label = "CUST";
         };
+
+        CML: CML {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LC(T) &kp C &kp M &kp L &kp SPACE &kp LC(V) &kp ENTER>;
+            label = "CML";
+        };       
+
+        CLOUD: CLOUD {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LC(T) &kp C &kp L &kp O &kp U &kp D &kp M &kp SPACE &kp LC(V) &kp ENTER>;
+            label = "CLOUD";
+        };
     };
 
     keymap {
