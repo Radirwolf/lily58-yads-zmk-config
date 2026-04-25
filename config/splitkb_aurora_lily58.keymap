@@ -11,32 +11,25 @@
 
 / {
     macros {
-        onePass: onePass {
+        SPC_ticket: SPC_ticket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(SPACE))>;
-            label = "ONEPASS";
+            bindings = <&kp LC(C) &kp LC(T) &kp S &kp P &kp C &kp SPACE &kp LC(V) &kp ENTER>;
+            label = "SPC_ticket";
         };
 
-        desktop1: desktop1 {
+        SID: SID {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_GUI &kp NUMBER_1>;
-            label = "DESKTOP1";
+            bindings = <&kp LC(C) &kp LC(T) &kp S &kp I &kp D &kp SPACE &kp LC(V) &kp ENTER>;
+            label = "SID";
         };
 
-        desktop2: desktop2 {
+        CUST: CUST {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_GUI &kp NUMBER_2>;
-            label = "DESKTOP2";
-        };
-
-        desktop3: desktop3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_GUI &kp NUMBER_3>;
-            label = "DESKTOP3";
+            bindings = <&kp LC(C) &kp LC(T) &kp C &kp I &kp D &kp SPACE &kp LC(V) &kp ENTER>;
+            label = "CUST";
         };
     };
 
