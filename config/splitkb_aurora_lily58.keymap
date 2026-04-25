@@ -11,39 +11,32 @@
 
 / {
     macros {
-        SPC_ticket: SPC_ticket {
+        onePass: onePass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(T) &kp S &kp P &kp C &kp SPACE &kp LC(V) &kp ENTER>;
-            label = "SPC_ticket";
+            bindings = <&kp LC(LA(SPACE))>;
+            label = "ONEPASS";
         };
 
-        SID: SID {
+        desktop1: desktop1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(T) &kp S &kp I &kp D &kp SPACE &kp LC(V) &kp ENTER>;
-            label = "SID";
+            bindings = <&kp LCTRL &kp LEFT_GUI &kp NUMBER_1>;
+            label = "DESKTOP1";
         };
 
-        CUST: CUST {
+        desktop2: desktop2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(T) &kp C &kp I &kp D &kp SPACE &kp LC(V) &kp ENTER>;
-            label = "CUST";
+            bindings = <&kp LCTRL &kp LEFT_GUI &kp NUMBER_2>;
+            label = "DESKTOP2";
         };
 
-        CML: CML {
+        desktop3: desktop3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(T) &kp C &kp M &kp L &kp SPACE &kp LC(V) &kp ENTER>;
-            label = "CML";
-        };       
-
-        CLOUD: CLOUD {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(T) &kp C &kp L &kp O &kp U &kp D &kp M &kp SPACE &kp LC(V) &kp ENTER>;
-            label = "CLOUD";
+            bindings = <&kp LCTRL &kp LEFT_GUI &kp NUMBER_3>;
+            label = "DESKTOP3";
         };
     };
 
